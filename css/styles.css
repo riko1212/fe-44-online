@@ -26,12 +26,11 @@ address {
     font-style: normal;
 }
 
-/* .text {
+.text {
     width: 200px;
     height: 200px;
     border: 10px solid tomato;
-    padding: 10px;
-} */
+}
 
 .wrap {
     width: 800px;
