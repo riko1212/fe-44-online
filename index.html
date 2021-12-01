@@ -597,15 +597,104 @@
                 </li>
             </ul>
         </footer>
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop" data-modal>
             <div class="modal">
                 <button type="button" class="modal-close" data-modal-close>
                     <svg class="close-icon" width="18" height="18">
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
                 </button>
+                <p class="modal-title">Очень важный заголовок модалки</p>
+                <form action="#" class="modal-form">
+                    <div class="modal-form-field">
+                        <label for="user-name" class="modal-input-text"
+                            >Введите имя</label
+                        >
+                        <input
+                            type="text"
+                            minlength="2"
+                            name="user-name"
+                            class="modal-input"
+                            placeholder="John Dou *"
+                            required="required"
+                            id="user-name"
+                        />
+                    </div>
+                    <div class="modal-form-field">
+                        <label for="user-email" class="modal-input-text">
+                            Введите почту</label
+                        >
+                        <input
+                            type="email"
+                            name="user-email"
+                            class="modal-input"
+                            placeholder="введите почту"
+                            id="user-email"
+                        />
+                    </div>
+                    <div class="modal-form-field">
+                        <label for="user-tel" class="modal-input-text">
+                            Введите номер</label
+                        >
+                        <input
+                            type="tel"
+                            name="user-tel"
+                            id="user-tel"
+                            class="modal-input"
+                            required
+                            placeholder="+38 (098) 111-11-11 *"
+                            value="+38"
+                        />
+                    </div>
+                    <div class="modal-form-field">
+                        <label for="user-text" class="modal-input-text">
+                            Введите коммент</label
+                        >
+                        <textarea
+                            name="user-text"
+                            id="user-text"
+                            class="modal-text"
+                            placeholder="Введите текст"
+                            maxlength="10"
+                        ></textarea>
+                    </div>
+                    <fieldset>
+                        <legend>gender</legend>
+                        <label
+                            >Male
+                            <input type="radio" name="gender" value="male" />
+                        </label>
+                        <label>
+                            Female
+                            <input type="radio" name="gender" value="female" />
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>hobby</legend>
+                        <label
+                            >sport
+                            <input type="checkbox" name="hobby" value="sport" />
+                        </label>
+                        <label>
+                            books
+                            <input
+                                type="checkbox"
+                                checked
+                                name="hobby"
+                                value="books"
+                            />
+                        </label>
+                        <label>
+                            tv
+                            <input type="checkbox" name="hobby" value="tv" />
+                        </label>
+                    </fieldset>
+                    <button type="submit">submit</button>
+                </form>
             </div>
         </div>
-        <script src="./js/modal.js"></script>
+        <!-- <script src="./js/modal.js"></script> -->
     </body>
 </html>
+
+user-name=Name &user-email=test%40mail.ua &user-tel=0999999999#
