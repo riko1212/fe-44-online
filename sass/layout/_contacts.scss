@@ -1,0 +1,37 @@
+.contacts {
+    background-image: url(../images/contacts-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    width: calc(50% + 15px);
+    padding-left: 100px;
+}
+.contacts-title {
+    color: var(--main-title-color);
+}
+
+.contacts-link {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+}
+
+.contacts-bottom-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.contacts-bottom-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+}

@@ -1,0 +1,88 @@
+
+
+.reasons {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.reasons-container {
+    display: flex;
+}
+
+.reasons-left {
+    display: flex;
+    justify-content: center;
+}
+
+.reasons-list {
+    width: 370px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reasons-item {
+    width: 170px;
+    height: 133px;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.reasons-item:nth-child(odd) {
+    margin-right: 30px;
+}
+
+.reasons-item:nth-child(even) {
+    margin-top: 30px;
+}
+
+.reasons-left,
+.reasons-right {
+    width: calc(50% - 30px);
+}
+.reasons-count {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--third-text-color);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.reasons-count::after {
+    content: "+";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.38;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.reasons-item-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+
+    color: var(--third-text-color);
+}
+
+.reasons-pre-title {
+    color: var(--third-text-color);
+    margin-bottom: 20px;
+}
+
+.reasons-pre-title::before {
+    background-color: var(--third-text-color);
+}
+
+.reasons-title {
+    color: var(--third-text-color);
+    margin-bottom: 20px;
+}
+
+.reasons-after-title {
+    color: var(--fourth-text-color);
+}
