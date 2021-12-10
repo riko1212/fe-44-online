@@ -1,16 +1,20 @@
 .pre-title {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
+    @include font(11px, 1.36, 0.1em, 600);
+    @extend %align-list;
     &::before {
         content: "";
         width: 63px;
         height: 1px;
         margin-right: 21px;
     }
+}
+
+.pre-title--color-dark {
+    color: var(--third-text-color);
+}
+
+.pre-title--color-light {
+    color: var(--first-text-color);
 }
 
