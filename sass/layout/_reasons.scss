@@ -1,27 +1,59 @@
 
 
 .reasons {
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 84px;
+    padding-bottom: 84px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
 }
 
 .reasons-container {
-    display: flex;
+    // display: flex;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 }
 
 .reasons-left {
     display: flex;
-    justify-content: center;
+    @media screen and (min-width: 768px) {
+        justify-content: flex-end;
+    }
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+    }
+}
+
+.reasons-right {
+    margin-bottom: 44px;
+    @media screen and (min-width: 768px) {
+        max-width: 500px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: unset;
+    }
 }
 
 .reasons-list {
-    width: 370px;
+    // width: 370px;
     display: flex;
     flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+        max-width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 370px;
+    }
 }
 
 .reasons-item {
-    width: 170px;
+    // width: 170px;
+    width: calc(50% - 15px);
     height: 133px;
     background-color: #f7f7f7;
     padding: 20px;
@@ -37,7 +69,10 @@
 
 .reasons-left,
 .reasons-right {
-    width: calc(50% - 30px);
+    
+    @media screen and (min-width: 1200px) {
+width: calc(50% - 30px);
+    }
 }
 .reasons-count {
     font-weight: 700;
